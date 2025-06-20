@@ -1,12 +1,20 @@
 [project]
 name = "print-utils"
-version = "0.0.1"
+version = "0.0.1-dev0"
 description = "Utility functions for formatted console printing used across the project."
+readme = "README.md"
 requires-python = ">=3.10"
+authors = [
+   {name = "VLMHyperBenchTeam", email = "contact@vlmhyperbench.team"},
+   {name = "Anton Shiryaev", email = "med.phisiker@gmail.com"}
+]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["print_utils"] 
