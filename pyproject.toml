@@ -5,7 +5,6 @@ description = "Utility functions for formatted console printing used across the 
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-   {name = "VLMHyperBenchTeam", email = "contact@vlmhyperbench.team"},
    {name = "Anton Shiryaev", email = "med.phisiker@gmail.com"}
 ]
 
@@ -17,4 +16,8 @@ build-backend = "hatchling.build"
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["print_utils"] 
+packages = ["print_utils"]
+
+[project.urls]
+Repository = "https://github.com/VLMHyperBenchTeam/print_utils"
+Homepage = "https://github.com/VLMHyperBenchTeam" 
