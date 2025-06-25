@@ -8,12 +8,12 @@
 
 # Перенаправляем импорты на внутренний модуль
 from .print_utils import (  # noqa: F401
-    print_header,
-    print_section,
-    print_success,
     print_error,
+    print_header,
     print_info,
     print_result,
+    print_section,
+    print_success,
 )
 
 __all__ = [
