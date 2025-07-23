@@ -17,19 +17,28 @@
 
 ## Установка
 
-### Из исходного кода
+### Из исходного кода (рекомендуемый способ для пользователей uv)
 
 ```bash
-git clone <repository-url>
-cd print_utils
-pip install .
+uv add git+https://github.com/VLMHyperBenchTeam/print_utils.git
+uv sync
+```
+
+### Для пользователей pip или uv (альтернативные способы)
+
+```bash
+pip install git+https://github.com/VLMHyperBenchTeam/print_utils.git
+# или
+uv pip install git+https://github.com/VLMHyperBenchTeam/print_utils.git
 ```
 
 ### Для разработки
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/VLMHyperBenchTeam/print_utils.git
 cd print_utils
+uv pip install -e .
+# или для пользователей pip
 pip install -e .
 ```
 
@@ -136,7 +145,7 @@ print_utils/
 Пакет построен с использованием современных стандартов Python:
 
 - Конфигурация через `pyproject.toml`
-- Система сборки: `hatchling`
+- Система сборки: `uv_build`
 - Поддержка type hints
 - Документированный код
 
